@@ -80,3 +80,7 @@ group :production do
 end
 
 gem "tailwindcss-rails", "~> 2.0"
+
+
+# Redis
+gem 'redis', '~> 4.8'
