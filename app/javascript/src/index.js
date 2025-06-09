@@ -5,7 +5,7 @@ import {
   postChat,
 } from "../lib/requests.js";
 
-$(document).ready(function () {
+$(function () {
   indexChats(function (response) {
     var htmlString = response.chats.map(function(chat) {
       return `
@@ -28,7 +28,7 @@ $(document).ready(function () {
 
   $("#new-chat-form").on("submit", function (event) {
     event.preventDefault();
-
+    console.log('test');
     var message = $("#chat-message").val();
     var name = $("#chat-name").val();
 
